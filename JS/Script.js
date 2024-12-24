@@ -10,4 +10,9 @@ loginButtpn.addEventListener('click', (event) => {
 
 username.addEventListener('keyup', (e) => {
     console.log(e);
+    if (username.value < 3 || username.value > 10) {
+        console.log('NO');
+    } else {
+        console.log('OK');
+    }
 })
