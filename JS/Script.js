@@ -2,6 +2,8 @@ let loginButtpn = document.getElementById('buttonLogin')
 let succsessful = document.querySelector('.succsessful')
 let username = document.querySelector('.username')
 let usernameEs = document.querySelector('.usernameEs')
+let password = document.querySelector('.password')
+let passwordEs = document.querySelector('.passwordEs')
 
 loginButtpn.addEventListener('click', (event) => {
     event.preventDefault()
@@ -16,3 +18,4 @@ username.addEventListener('keyup', (e) => {
         console.log('OK');
     }
 })
+
