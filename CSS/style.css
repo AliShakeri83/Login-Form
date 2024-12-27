@@ -42,7 +42,7 @@ body {
     display: flex;
     width: 100%;
     position: relative;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .input-box input {
@@ -101,10 +101,26 @@ body {
     color: white;
 }
 
+.input-box .usernameEs {
+    color: #32CDD5;
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 42px;
+}
+
+.input-box .passwordEs {
+    color: #32CDD5;
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 42px;
+}
+
 .remember-forgot-box {
     display: flex;
     width: 100%;
-    margin-top: 16px;
+    margin-top: 36px;
     justify-content: space-between;
 }
 

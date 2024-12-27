@@ -12,10 +12,20 @@ loginButtpn.addEventListener('click', (event) => {
 
 username.addEventListener('keyup', (e) => {
     console.log(e);
-    if (username.value < 3 || username.value > 10) {
-        console.log('NO');
+    if (username.value.length < 3 || username.value.length > 12) {
+        usernameEs.innerHTML = 'Username is not Valid'
+        usernameEs.style.color = 'red'
     } else {
-        console.log('OK');
+        usernameEs.innerHTML = 'Username is Valid'
+        usernameEs.style.color = '#32CDD5'
+    }
+
+    if (password.value.length < 3 || password.value.length > 12) {
+        passwordEs.innerHTML = 'Password is not Valid'
+        passwordEs.style.color = 'red'
+    } else {
+        passwordEs.innerHTML = 'Password is Valid'
+        passwordEs.style.color = '#32CDD5'
     }
 })
 
