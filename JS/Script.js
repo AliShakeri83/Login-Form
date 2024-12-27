@@ -10,8 +10,7 @@ loginButtpn.addEventListener('click', (event) => {
     succsessful.style.display = 'block'
 })
 
-username.addEventListener('keyup', (e) => {
-    console.log(e);
+username.addEventListener('keyup', () => {
     if (username.value.length < 3 || username.value.length > 12) {
         usernameEs.innerHTML = 'Username is not Valid'
         usernameEs.style.color = 'red'
@@ -20,6 +19,9 @@ username.addEventListener('keyup', (e) => {
         usernameEs.style.color = '#32CDD5'
     }
 
+})
+
+password.addEventListener('keyup', () => {
     if (password.value.length < 3 || password.value.length > 12) {
         passwordEs.innerHTML = 'Password is not Valid'
         passwordEs.style.color = 'red'
@@ -28,4 +30,3 @@ username.addEventListener('keyup', (e) => {
         passwordEs.style.color = '#32CDD5'
     }
 })
-
